@@ -1,0 +1,161 @@
+#left_antenna, #right_antenna, #head, #left_arm, #torso, #right_arm, #left_leg, #right_leg {
+  background-color: blue;
+}
+
+div {
+  height: 150px;
+  width: 300px;
+}
+
+#android {
+  animation: mv 10s infinite;
+  position: relative;
+  left: 400px;
+}
+
+@keyframes blink {
+  50%{
+    background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
+  }
+}
+
+@keyframes color {
+  0% {background-color: red;}
+  15% {background-color: orange;}
+  30% {background-color: yellow;}
+  45% {background-color: green;}
+  60% {background-color: blue;}
+  75% {background-color: indigo;}
+  100% {background-color: violet;}
+}
+
+@keyframes mv {
+  0%   {left:400px;}
+  50%   {left:800px;}
+  100%   {left:400px;}
+}
+
+#head {
+  height: 150px;
+  width: 300px;
+  position: relative;
+  border-radius: 150px 150px 0 0;
+  margin-bottom: 10px;
+
+}
+
+#torso {
+  width: 300px;
+  height: 300px;
+  border-radius: 0 0 50px 50px;
+}
+
+#left_arm {
+  width: 100px;
+  height: 200px;
+  border-radius: 100px;
+  position: relative;
+  top: 0;
+  left: -110px;
+}
+
+#right_arm {
+  width: 200px;
+  height: 100px;
+  border-radius: 100px;
+  position: relative;
+  top: -200px;
+  left: 310px;
+
+}
+
+#left_leg, #right_leg {
+  width: 100px;
+  height: 200px;
+  border-radius: 100px;
+  position: relative;
+}
+
+#left_leg {
+  top: 10px;
+  left: 30px;
+}
+
+#right_leg {
+  top: -190px;
+  left: 170px;
+}
+
+#left_eye, #right_eye {
+  animation: blink .5s infinite;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  float: left;
+}
+
+#left_eye {
+  position: relative;
+  top: 70px;
+  left: 90px;
+}
+
+#right_eye {
+  position: relative;
+  top: 70px;
+  left: 150px;
+}
+
+#antenna {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#left_antenna, #right_antenna {
+  width: 10px;
+  height: 100px;
+  border-radius: 10px;
+  float: left;
+}
+
+#left_antenna {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  transform:rotate(-33deg);
+}
+
+#right_antenna {
+  position: relative;
+  top: 40px;
+  left: 260px;
+  transform: rotate(33deg);
+}
+
+#pole {
+  background-color: black;
+  position: relative;
+  height: 120px;
+  width: 20px;
+  top: -370px;
+  left: 480px;
+  border-radius: 0 0 20px 20px;
+}
+
+#flag {
+  background-color: red;
+  animation: color 10s infinite;
+  position: relative;
+  height: 120px;
+  width: 300px;
+  top: -610px;
+  left: 480px;
+  border-radius: 0px 50px 50px 0px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  box-sizing: border-box;
+  padding-top: 30px;
+}

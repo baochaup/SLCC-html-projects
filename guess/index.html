@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+  </head>
+  <body onload="startGame();">
+    <h1>Can you guess the secret number?</h1>
+    <h2 class="countdown" id="time">You have 30 seconds to find it</h2>
+    <h2 id="game-message">Click Begin to start</h2>
+    <div id="game-image"><img src="img/begin.jpg"></div>
+    <div class="input">
+      <form action="javascript:void(0);">
+        <input id="begin" type="button" value="Begin" onclick="beginGame();">
+        <input id="user-guess" type="text" placeholder="Enter your guess">
+        <input id="submit" type="button" value="Submit Guess" onclick="playGame();">
+        <input id="play-again" type="button" value="Play Again?" onclick="startGame();">
+      </form>
+    </div>
+    <h3 id="entered"></h3>
+  </body>
+</html>

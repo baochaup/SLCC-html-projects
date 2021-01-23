@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic tac toe</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to Tom and Jerry's world!</h1>
+    <h2>Let's play Tic Tac Toe</h2>
+    <fieldset id="enterName">
+      <legend>Enter your names and begin</legend>
+      <input type="text" placeholder="First player's name" id="name1">
+      <input type="text" placeholder="Second player's name" id="name2">
+      <button id="launch" onclick="begin();">Let's begin!</button>
+    </fieldset>
+    <div id="again">
+      <p>Wanna play again?</p>
+      <button onclick="playAgain();">Change Names</button>
+      <button onclick="initialize();">Keep Names</button>
+    </div>
+    <div id="main">
+      <h2 id="game-message">Who's gonna win?</h2>
+      <table class="scoreBoard">
+        <tr>
+          <th>Player's Name</th>
+          <th>Won</th>
+        </tr>
+        <tr>
+          <td id="firstPlayerName">Name</td>
+          <td id="firstPlayerScore">0</td>
+        </tr>
+        <tr>
+          <td id="secondPlayerName">Name</td>
+          <td id="secondPlayerScore">0</td>
+        </tr>
+      </table>
+      <div id="game-board">
+      </div>
+    </div>
+  </body>
+</html>

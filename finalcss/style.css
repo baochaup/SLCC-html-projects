@@ -1,0 +1,231 @@
+body {
+  font: 400 15px 'Nunito', sans-serif;
+  line-height: 1.8;
+  color: #7f8287;
+}
+.jumbotron {
+  background-color: blue;
+  color: #ffffff;
+  padding: 100px 25px;
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.logo {
+  font-size: 200px;
+}
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: blue;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4511e;
+}
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+  margin-right: -4px;
+}
+textarea {
+  resize: none;
+}
+.item img, .overlay-contain img {
+  width: 100%;
+}
+#projects {
+  text-aline: center;
+}
+.overlay-contain {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 300px;
+  margin-right: 70px;
+	margin-left: 70px;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+.overlay-contain img {
+  opacity: 1;
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+}
+.overlay-contain:hover img {
+  opacity: 0.3;
+}
+
+.overlay-contain:hover .text {
+  opacity: 1;
+}
+
+.col-sm-4 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#links {
+  margin-bottom: 30px;
+}
+#loader {
+  z-index: 1;
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+#thanks {
+  display: none;
+  text-align: center;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-20px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-20px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+@media screen and (max-width: 1229px) {
+  .overlay-contain {
+    max-width: 400px;
+    max-height: 300px;
+    margin-right: 50px;
+  	margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1103px) {
+  .overlay-contain {
+    max-width: 500px;
+    max-height: 400px;
+    margin-right: auto;
+  	margin-left: auto;
+    display: block;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 633px) {
+  .overlay-contain {
+    max-width: 400px;
+    max-height: 200px;
+  }
+  .overlay-contain img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+  .overlay-contain {
+    max-width: 300px;
+    max-height: 150px;
+  }
+  .overlay-contain img {
+    height: 150px;
+  }
+}

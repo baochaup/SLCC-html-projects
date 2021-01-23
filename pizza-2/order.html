@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Montserrat|Ubuntu" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="pzorder">
+      <div class="overlay">
+        <img src="img/pzorder.png" width="600px" height="400px">
+      </div>
+      <div class="under">
+        <img src="img/pzdough.jpg" width="600px" height="400px">
+      </div>
+      <p>Please complete the form below to order your pizza.</p>
+    </div>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png"></a>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="order.html" class="orderpage active">Order Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="order">
+      <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="POST">
+        <fieldset>
+          <legend><span class="number">1</span> Customer Info</legend>
+          <input placeholder="Enter your first name" name="first" type="text">
+          <input placeholder="Enter your last name" name="last" type="text">
+          <input placeholder="Enter your address 1" name="add1" type="text">
+          <input placeholder="Enter your address 2" name="add2" type="text">
+          <input placeholder="Enter your city" name="city" type="text">
+          <input placeholder="Enter your state" name="state" type="text">
+          <input placeholder="Enter your zip code" name="zip" type="text">
+          <input placeholder="Enter your phone number" name="phone" type="text">
+          <input placeholder="Enter your email" name="email" type="text">
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">2</span> Order Info</legend>
+          <label for="crust">Choose your favorite crust</label>
+          <table border="0" cellspacing="0" cellpadding="5" width="500px">
+            <tr>
+              <td><input type="radio" name="crust" value="original" checked="checked"> Original</td>
+              <td><input type="radio" name="crust" value="pan"> Fresh Pan</td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="crust" value="gluten free"> Gluten Free</td>
+              <td><input type="radio" name="crust" value="thin"> Thin</td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="crust" value="stuffed"> Stuffed</td>
+              <td></td>
+            </tr>
+          </table>
+          <label for="size">Select your favorite size</label>
+          <select name="size">
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="family">Family</option>
+          </select>
+          <label for="toppings[]">Select your favorite toppings</label>
+          <table border="0" cellspacing="0" cellpadding="5" width="500px">
+            <tr>
+              <td><input type="checkbox" name="toppings[]" value="pepperoni" checked="checked"> Pepperoni</td>
+              <td><input type="checkbox" name="toppings[]" value="pineapple"> Pineapple</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="toppings[]" value="olive"> Olive</td>
+              <td><input type="checkbox" name="toppings[]" value="mushroom" checked="checked"> Mushroom</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="toppings[]" value="spinach"> Spinach</td>
+              <td><input type="checkbox" name="toppings[]" value="beef"> Beef</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="toppings[]" value="chicken"> Chicken</td>
+              <td><input type="checkbox" name="toppings[]" value="sausage" checked="checked"> Sausage</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="toppings[]" value="bacon"> Bacon</td>
+              <td><input type="checkbox" name="toppings[]" value="tomato"> Tomato</td>
+            </tr>
+          </table>
+          <textarea name="comments" placeholder="You want us to know"></textarea>
+        </fieldset>
+        <input type="reset">
+        <input type="submit">
+      </form>
+    </div>
+  </body>
+</html>

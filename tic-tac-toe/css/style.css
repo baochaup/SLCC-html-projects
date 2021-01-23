@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+body {
+  background-image: url("../img/bg.jpg");
+  font-family: 'Bangers', cursive;
+  background-size: cover;
+  color: #128bd1;
+}
+h1, h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+#main {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+  display: none;
+}
+.scoreBoard {
+  border: none;
+  display: inline-block;
+  float: left;
+  margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+div#game-board {
+  overflow: hidden;
+  padding: 30px;
+  width: 605px;
+  display: inline-block;
+  float: left;
+}
+div[id^='row-'] div { /*target all div beginning with row-*/
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding-top: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+div[id^='row-'] div img {
+  width: 150px;
+  height: 150px;
+}
+div#row-2, div#row-3 {
+  clear: both;
+}
+div#row-1 div {
+  border-top-width: 3px;
+}
+div#row-3 div {
+  border-bottom-width: 3px;
+}
+div[id^='row-'] div:first-child {
+  border-left-width: 3px;
+}
+div[id^='row-'] div:last-child {
+  border-right-width: 3px;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 10%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  box-shadow: 0 3px #999;
+}
+button:hover {background-color: #3e8e41}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+#enterName {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  border: none;
+  padding-top: 10px;
+}
+#enterName legend {
+  padding-top: 10px;
+}
+#enterName input {
+  width: 25%;
+  margin: 10px 10px;
+  padding: 5px 0px;
+}
+#enterName button {
+  margin: 10px 10px;
+}
+#again {
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}

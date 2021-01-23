@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mad Libs</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <h1>Mad Libs Game</h1>
+    <div id="input">
+      <h3>Fill in the blanks below with whatever words you like. When you're done, hit the "See the Results!" button, and your choices will be inserted into the story.</h3>
+      <fieldset>
+          <legend>Input Your Word Choices</legend>
+          <input placeholder="Noun #1" id="noun1" type="text">
+          <input placeholder="Noun #2" id="noun2" type="text">
+          <input placeholder="Noun #3" id="noun3" type="text">
+          <input placeholder="Adjective #1" id="adj1" type="text">
+          <input placeholder="Adjective #2" id="adj2" type="text">
+          <input placeholder="Adjective #3" id="adj3" type="text">
+          <input placeholder="Verb #1" id="verb1" type="text">
+          <input placeholder="Verb #2" id="verb2" type="text">
+          <input placeholder="Verb #3" id="verb3" type="text">
+          <button id="launch" onclick="generateStory();">See the Results!</button>
+      </fieldset>
+    </div>
+    <div id="story"></div>
+  </body>
+</html>
